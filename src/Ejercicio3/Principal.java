@@ -22,7 +22,7 @@ public class Principal {
 		Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/acadt","root","");
 		System.out.println(conexion.getMetaData());
 		Statement st= conexion.createStatement();
-		//kll
+		//kllghfg
 		ResultSet rs = st.executeQuery("SELECT apellido, oficio, salario FROM empleados where dept_no=20  ");
 	//En el ejercicio pone que busquemos del departamento 10, pero yo pongo 20 porque me los he creado así en la BD
 		while (rs.next()) {
